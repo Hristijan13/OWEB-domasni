@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>City Explorer - Анкета</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">City Explorer</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Почетна</a></li>
+          <li><a href="gallery.html">Галерија</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="survey.html">Анкета</a></li>
+          <li><a href="login.html">Најава</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Анкета за импресии од посетителите</h1>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="visitor-name">Вашето име:</label>
+          <input type="text" id="visitor-name" name="visitorName" />
+        </div>
+
+        <div class="form-group">
+          <label>Како би ја оцениле вашата посета?</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="rating" value="Одлична" />
+              Одлична</label
+            >
+            <label
+              ><input type="radio" name="rating" value="Добра" /> Добра</label
+            >
+            <label
+              ><input type="radio" name="rating" value="Просечна" />
+              Просечна</label
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback">Вашите импресии:</label>
+          <textarea id="feedback" name="feedback" rows="5"></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Испрати" />
+        </div>
+      </form>
+
+      <div id="survey-results"></div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 City Explorer. Сите права се задржани.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

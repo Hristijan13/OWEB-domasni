@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>City Explorer - Најава</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">City Explorer</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Почетна</a></li>
+          <li><a href="gallery.html">Галерија</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="survey.html">Анкета</a></li>
+          <li><a href="login.html">Најава</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Најава</h1>
+      <div class="login-container">
+        <form id="login-form">
+          <div class="input-container">
+            <label for="username">Корисничко име</label>
+            <input
+              type="text"
+              id="username"
+              required
+              placeholder="Внесете корисничко име"
+            />
+          </div>
+          <div class="input-container">
+            <label for="password">Лозинка</label>
+            <input
+              type="password"
+              id="password"
+              required
+              placeholder="Внесете лозинка"
+            />
+          </div>
+          <button type="submit">Најави се</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 City Explorer. Сите права се задржани.</p>
+    </footer>
+
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

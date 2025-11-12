@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>City Explorer - Галерија</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">City Explorer</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Почетна</a></li>
+          <li><a href="gallery.html">Галерија</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="survey.html">Анкета</a></li>
+          <li><a href="login.html">Најава</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Галерија на градови</h1>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="slikaBarcelona.jpg" alt="Поглед од Барселона" />
+          <div class="interactions">
+            <button onclick="like(0)">Ми се допаѓа</button>
+            <span id="likes-0">0</span>
+            <button onclick="dislike(0)">Не ми се допаѓа</button>
+            <span id="dislikes-0">0</span>
+          </div>
+          <div class="comments-section">
+            <h4>Коментари:</h4>
+            <div id="comments-list-0"></div>
+            <input
+              type="text"
+              id="comment-input-0"
+              placeholder="Напишете коментар..."
+            />
+            <button onclick="addComment(0)">Објави</button>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="slikaMadrid.jpg" alt="Поглед од Мадрид" />
+          <div class="interactions">
+            <button onclick="like(1)">Ми се допаѓа</button>
+            <span id="likes-1">0</span>
+            <button onclick="dislike(1)">Не ми се допаѓа</button>
+            <span id="dislikes-1">0</span>
+          </div>
+          <div class="comments-section">
+            <h4>Коментари:</h4>
+            <div id="comments-list-1"></div>
+            <input
+              type="text"
+              id="comment-input-1"
+              placeholder="Напишете коментар..."
+            />
+            <button onclick="addComment(1)">Објави</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 City Explorer. Сите права се задржани.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

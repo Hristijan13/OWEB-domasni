@@ -1,0 +1,227 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: calc(100vh - 160px);
+}
+
+h1,
+h2 {
+  text-shadow: 1px 1px 3px lightgray;
+}
+
+.site-header,
+.site-footer {
+  background-color: rgba(44, 62, 80, 0.95);
+  color: white;
+  padding: 15px 40px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.site-header .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.site-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+.site-header nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.site-header nav a:hover {
+  color: #3498db;
+}
+
+.site-footer {
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  max-width: 100%;
+  margin-bottom: 15px;
+
+  border-radius: 5px;
+}
+
+.interactions button,
+.comments-section button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+
+  border-radius: 4px;
+
+  transition: background-color 0.3s;
+}
+
+.interactions button:hover,
+.comments-section button:hover {
+  background-color: #2980b9;
+}
+
+.comments-section input[type="text"] {
+  width: calc(100% - 85px);
+  padding: 8px;
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+}
+
+.comment {
+  background-color: #f0f0f0;
+  padding: 8px;
+  margin-top: 8px;
+
+  border-left: 3px solid #3498db;
+
+  border-radius: 4px;
+}
+
+#survey-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#survey-form input[type="text"],
+#survey-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.radio-group label {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+#survey-form input[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+#survey-form input[type="submit"]:hover {
+  background-color: #229954;
+}
+
+.login-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      label {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 14px;
+      }
+      input {
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 5px;
+        color: rgba(44, 62, 80, 0.95);
+        background-color: white;
+      }
+    }
+
+    button {
+      margin-top: 24px;
+      font-size: 24px;
+      text-transform: uppercase;
+      border-radius: 5px;
+      font-weight: bold;
+      padding: 5px;
+      color: white;
+      background-color: rgba(44, 62, 80, 0.95);
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
